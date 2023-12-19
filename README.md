@@ -7,6 +7,7 @@ Entrypoint is ``entrypoint.bash`` BASH script executing following actions:
   * ``-f /usr/local/etc/haproxy/conf.d`` - directory with configuration files
   * ``-db`` - disable background mode
   * ``-W`` - master-worker mode
+  * ``-q`` - quiet mode
 
 ## Configuration
 Custom basic configuration file provided as parameter to ``haproxy`` sets only
