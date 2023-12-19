@@ -12,4 +12,4 @@ fi
 if ! [[ -d ${DATAD} ]]; then mkdir -p "${DATAD}"; fi
 chmod ug=rwX,o-rX -R "${DATAD}"
 
-exec /usr/sbin/haproxy -W -db -q -f "/usr/local/etc/haproxy/haproxy.cfg" -f "${CONFD}"
+exec /usr/sbin/haproxy -f "/usr/local/etc/haproxy/haproxy.cfg" -f "${CONFD}"
